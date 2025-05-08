@@ -1,11 +1,11 @@
 import React from "react";
 import Paper from "@mui/material/Paper";
 
-interface registrationFormProps {
+interface loginFormProps {
     children: React.ReactNode;
 }
 
-const RegistrationForm = ({ children }: registrationFormProps) => {
+const LoginForm = ({ children }: loginFormProps) => {
     return (
         <>
             <Paper
@@ -19,4 +19,4 @@ const RegistrationForm = ({ children }: registrationFormProps) => {
     );
 };
 
-export default RegistrationForm;
+export default LoginForm;

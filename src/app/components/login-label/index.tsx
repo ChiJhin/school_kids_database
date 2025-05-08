@@ -1,7 +1,7 @@
 import React from "react";
 import TextField from "@mui/material/TextField";
 
-const RegistrationLable = ({ label }: { label: string }) => {
+const LoginLable = ({ label }: { label: string }) => {
     return (
         <>
             <TextField
@@ -14,4 +14,4 @@ const RegistrationLable = ({ label }: { label: string }) => {
     );
 };
 
-export default RegistrationLable;
+export default LoginLable;

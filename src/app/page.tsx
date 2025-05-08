@@ -1,21 +1,19 @@
 import Link from "next/link";
-import RegistrationForm from "./components/registration-form";
-import RegistrationLable from "./components/registration-lable";
-import Button from "@mui/material/Button";
+import LoginLable from "./components/login-label";
+import LoginForm from "./components/login-fofm";
+import LoginButton from "./components/login-button";
 
 export default function Home() {
     return (
         <main>
-            <RegistrationForm>
-                <RegistrationLable label="Логін" />
-                <RegistrationLable label="Пароль" />
-                <Button variant="outlined" className="w-24">
-                    Увійти
-                </Button>
+            <LoginForm>
+                <LoginLable label="Логін" />
+                <LoginLable label="Пароль" />
+                <LoginButton />
                 <Link href="/dashboard" className="outline-solid p-1">
                     Умовно увійти
                 </Link>
-            </RegistrationForm>
+            </LoginForm>
         </main>
     );
 }
